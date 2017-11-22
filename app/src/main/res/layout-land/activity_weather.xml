@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".WeatherActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/weatherIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Condition icon"
+                android:src="@drawable/icon_na"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/temperatureTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="Temperature"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/conditionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Condition"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top|center_horizontal"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/LightGray"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Data from Yahoo\nCreated by Rostislav Zalevsky"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/LightGray"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:baselineAligned="false">
+
+        <fragment
+            android:id="@+id/forecast_0"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <fragment
+            android:id="@+id/forecast_1"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <fragment
+            android:id="@+id/forecast_2"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <fragment
+            android:id="@+id/forecast_3"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <fragment
+            android:id="@+id/forecast_4"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <fragment
+            android:id="@+id/forecast_5"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <fragment
+            android:id="@+id/forecast_6"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <fragment
+            android:id="@+id/forecast_7"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <fragment
+            android:id="@+id/forecast_8"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <fragment
+            android:id="@+id/forecast_9"
+            android:name="rostislav.weather.fragments.WeatherConditionFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_weather_condition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+</LinearLayout>
